@@ -33,5 +33,5 @@ CREATE TABLE IF NOT EXISTS contact_submissions (
 -- Register initial admin user (password: admin123)
 -- Using PHP password_hash('admin123', PASSWORD_BCRYPT)
 INSERT INTO users (full_name, email, password, role) 
-VALUES ('System Admin', 'admin@ridhisidhi.com', '$2y$10$8W3Y6s7N1H0hV/K8A7L/K.wV5X3/V5P/V5P/V5P/V5P/V5P/V5P/V5', 'admin')
-ON DUPLICATE KEY UPDATE email=email; 
+VALUES ('System Admin', 'admin@ridhisidhi.com', '$2y$12$tS.3D7bruWJvhp6rconotuqPyGNlgjDBwBoX9x6eMRq7.ttTfSqHq', 'admin')
+ON DUPLICATE KEY UPDATE email=email;

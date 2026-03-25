@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridhi Sidhi Security Services | Premium Security Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="auth-only">
+
+    
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-line"></div>
+            <div class="loader-line"></div>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+    
+
+    <div id="header"></div>
+
+
+<div class="auth-page">
+    <div class="auth-box">
+
+        <!-- Dynamic Heading -->
+        <h2 id="loginTitle">Login</h2>
+        <p class="auth-subtitle" id="loginSubtitle">
+            Access your account
+        </p>
+
+        <!-- Role Switch -->
+        <div class="role-switch">
+            <button type="button" class="role-btn" data-role="admin">
+                <i class="fas fa-user-shield"></i> Admin
+            </button>
+
+            <button type="button" class="role-btn" data-role="client">
+                <i class="fas fa-user"></i> User
+            </button>
+        </div>
+
+        <!-- Login Form -->
+        <form class="auth-form">
+
+            <!-- Hidden Role -->
+            <input type="hidden" id="loginRole" name="role" value="">
+
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn-gold full-btn">
+                Login
+            </button>
+        </form>
+
+        <p class="auth-footer">
+            Don’t have an account?
+            <a href="signup.html" class="gold">Create one</a>
+        </p>
+        <p class="auth-footer">
+    <a href="forgot-password.html" class="gold">
+        Forgot Password?
+    </a>
+</p>
+
+
+    </div>
+</div>
+
+
+<div id="footer"></div>
+    
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+</body>
+</html>

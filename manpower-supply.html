@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilled Manpower Supply | Ridhi Sidhi Security Services</title>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-line"></div>
+            <div class="loader-line"></div>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <div id="header"></div>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <span class="page-tagline gold">Premium Staffing Solutions</span>
+            <h1 class="page-title">Manpower Supply</h1>
+            <p class="page-description">
+                Professional staffing solutions for office, administrative & institutional operations
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICE DETAIL ================= -->
+<section class="service-detail">
+    <div class="container">
+        <!-- MAIN GRID -->
+        <div class="service-layout">
+            <!-- IMAGE -->
+            <div class="service-image">
+                <img src="assets/images/manpower.jpg" alt="Manpower Supply">
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="service-description">
+                <h2>Elite Manpower Services</h2>
+                <p>
+                    We provide comprehensive manpower solutions including Personal Secretaries, Computer Operators, 
+                    Electricians, Carpenters, Drivers, Gardeners, Cooks & Housekeeping staff. All personnel undergo 
+                    thorough training and background verification.
+                </p>
+            </div>
+
+            <!-- KEY FEATURES -->
+            <div class="service-features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li><i class="fas fa-check gold"></i> Executive Office Assistants & Personal Secretaries</li>
+                    <li><i class="fas fa-check gold"></i> Computer Operators & Data Entry Specialists</li>
+                    <li><i class="fas fa-check gold"></i> Certified Electricians & Technical Staff</li>
+                    <li><i class="fas fa-check gold"></i> Professional Drivers (All Vehicle Types)</li>
+                    <li><i class="fas fa-check gold"></i> Skilled Carpenters & Maintenance Staff</li>
+                </ul>
+            </div>
+
+            <!-- SERVICE BENEFITS -->
+            <div class="service-benefits">
+                <h3>Service Benefits</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon gold">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4>Verified Personnel</h4>
+                        <p>Thorough background checks and verification of all staff</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon gold">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Trained Professionals</h4>
+                        <p>Skill-based training and continuous development programs</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon gold">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Certified Staff</h4>
+                        <p>Personnel with relevant certifications and qualifications</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon gold">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Quick Replacement</h4>
+                        <p>Immediate replacement in case of any staff requirements</p>
+                    </div>
+                </div>
+            </div>
+
+           <!-- SERVICE TYPE (FULL WIDTH) -->
+<div class="service-types full-width">
+    <h3>Specialized Manpower Categories</h3>
+    <div class="types-grid">
+        <!-- First Row: Skilled and Semi-Skilled (2 columns) -->
+        <div class="type-card">
+            <h4><i class="fas fa-user-check gold"></i> Skilled Manpower</h4>
+            <p>Trained professionals with specific technical skills and certifications</p>
+            <div class="sub-categories">
+                <div class="sub-category">
+                    <h5><i class="fas fa-leaf"></i> Gardener</h5>
+                    <p>Professional landscaping and garden maintenance experts</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-utensils"></i> Cook</h5>
+                    <p>Trained culinary professionals for commercial and residential kitchens</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-flask"></i> Lab Technician</h5>
+                    <p>Certified laboratory technicians for medical and research facilities</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-bolt"></i> Generator Operator</h5>
+                    <p>Licensed generator operators for power backup systems</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="type-card">
+            <h4><i class="fas fa-users gold"></i> Semi-Skilled Manpower</h4>
+            <p>Trained personnel with basic skills and on-the-job training</p>
+            <div class="sub-categories">
+                <div class="sub-category">
+                    <h5><i class="fas fa-user-tie"></i> Peon</h5>
+                    <p>Office support staff for documentation and general assistance</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-broom"></i> Housekeeping</h5>
+                    <p>Cleaning and maintenance staff for offices and institutions</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-briefcase"></i> Office Boy</h5>
+                    <p>Office assistants for errands and basic administrative tasks</p>
+                </div>
+                <div class="sub-category">
+                    <h5><i class="fas fa-ellipsis-h"></i> Others</h5>
+                    <p>Various semi-skilled personnel for specific operational needs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Second Row: Highly Skilled (full width) -->
+    <div class="types-grid full-width-row">
+        <div class="type-card full-width-card">
+            <h4><i class="fas fa-user-graduate gold"></i> Highly Skilled Manpower</h4>
+            <p>Specialized experts with advanced training and qualifications</p>
+            <div class="sub-categories">
+                <div class="sub-category-row">
+                    <div class="sub-category">
+                        <h5><i class="fas fa-code"></i> Programmer</h5>
+                        <p>Software developers and programming experts</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-desktop"></i> Computer Operator</h5>
+                        <p>Advanced computer operators and system handlers</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-chalkboard-teacher"></i> Computer Trainer</h5>
+                        <p>IT trainers and computer skill instructors</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-keyboard"></i> Stenographer</h5>
+                        <p>Professional stenographers and transcription specialists</p>
+                    </div>
+                </div>
+                
+                <div class="sub-category-row">
+                    <div class="sub-category">
+                        <h5><i class="fas fa-car"></i> Driver</h5>
+                        <p>Professional drivers with commercial licenses and safety training</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-bolt"></i> Electrician</h5>
+                        <p>Certified electricians with advanced technical training</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-clipboard-list"></i> Office Assistant</h5>
+                        <p>Advanced administrative and office management professionals</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-book"></i> Librarian</h5>
+                        <p>Trained library management and information specialists</p>
+                    </div>
+                    <div class="sub-category">
+                        <h5><i class="fas fa-calculator"></i> Accountant</h5>
+                        <p>Qualified accountants and financial management experts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Professional Manpower?</h2>
+            <p>Contact us today for reliable and trusted staffing services.</p>
+            <a href="contact.html" class="btn-gold">Request a Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/footer.js"></script>
+
+</body>
+</html>

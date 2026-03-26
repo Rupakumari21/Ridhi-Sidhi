@@ -5,18 +5,29 @@ include 'config/db.php';
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = trim($_POST['name']);
-    $phone = trim($_POST['phone']);
-    $email = trim($_POST['email']);
-    $organization = trim($_POST['organization']);
-    $service = trim($_POST['service']);
-    $location = trim($_POST['location']);
-    $message = trim($_POST['message']);
+    // Collect and sanitize form data
+    $name = isset($_POST['name']) ? trim($_POST['name']) : '';
+    $phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $organization = isset($_POST['organization']) ? trim($_POST['organization']) : '';
+    $service = isset($_POST['service']) ? trim($_POST['service']) : '';
+    $location = isset($_POST['location']) ? trim($_POST['location']) : '';
+    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
 
-    // errors array
-    if (empty($name) || empty($phone) || empty($service) || empty($location) || empty($message)) {
-        echo json_encode(['status' => 'error', 'message' => 'Please fill in all required fields.']);
-        exit;
+    // Validation check for each required field
+    $required_fields = [
+        'name' => 'Full Name',
+        'phone' => 'Phone Number',
+        'service' => 'Service Required',
+        'location' => 'Location / City',
+        'message' => 'Message / Requirements'
+    ];
+
+    foreach ($required_fields as $field => $label) {
+        if (empty($$field)) {
+            echo json_encode(['status' => 'error', 'message' => "The $label field is required."]);
+            exit;
+        }
     }
 
     try {

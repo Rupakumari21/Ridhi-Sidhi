@@ -5,7 +5,7 @@
 $host = '127.0.0.1'; 
 $dbname = 'ridhi_sidhi_db';
 $username = 'root';
-$password = 'Shaan@123';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

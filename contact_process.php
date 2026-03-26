@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     foreach ($required_fields as $field => $label) {
-        if (empty($$field)) {
+        if (!isset($_POST[$field]) || trim($_POST[$field]) === '') {
             echo json_encode(['status' => 'error', 'message' => "The $label field is required."]);
             exit;
         }

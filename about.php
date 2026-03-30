@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Ridhi Sidhi Security Services - Premium Protection</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
-<body>
+ <?php include 'includes/header.php'; ?>
 
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-        </div>
-    </div>
-    
-    <div id="header"></div>
-    
     <section class="page-header">
         <div class="container">
             <div class="page-header-content">
@@ -411,15 +390,5 @@
         </div>
     </section>
 
-    <div id="footer"></div>
+    <?php include 'includes/footer.php'; ?>
     
-    <button class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/footer.js"></script>
-
-</body>
-</html>

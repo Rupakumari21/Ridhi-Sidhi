@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Equipment Supply | Ridhi Sidhi Security Services</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="preloader">
-  <div class="loader">
-    <div class="loader-line"></div>
-    <div class="loader-line"></div>
-    <div class="loader-line"></div>
-  </div>
-</div>
-
-<div id="header"></div>
+<?php include 'includes/header.php'; ?>
 
 <!-- PAGE HEADER -->
 <section class="page-header">
@@ -127,11 +105,4 @@
   </div>
 </section>
 
-<div id="footer"></div>
-
-<script src="assets/js/app.js"></script>
-<script src="assets/js/header.js"></script>
-<script src="assets/js/footer.js"></script>
-
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>

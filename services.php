@@ -426,7 +426,7 @@
                 <h2>Ready for <span class="gold">Premium Security?</span></h2>
                 <p>Contact us today for elite security and manpower solutions tailored to your needs</p>
                 <div class="cta-btns">
-                    <a href="contact.html" class="btn-gold">Get Custom Quote <i class="fas fa-file-contract"></i></a>
+                    <a href="contact.php" class="btn-gold">Get Custom Quote <i class="fas fa-file-contract"></i></a>
                     <a href="tel:9386831906" class="btn-outline">Call Now: 7004422944/ 9852572995</a>
                 </div>
             </div>

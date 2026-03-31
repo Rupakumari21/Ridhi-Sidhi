@@ -308,7 +308,7 @@
         </div>
     </div>
     <div class="view-more-wrapper">
-    <a href="clients.html" class="btn-view-more">
+    <a href="clients.php" class="btn-view-more">
         View More Clients <i class="fas fa-arrow-right"></i>
     </a>
 </div>
@@ -383,8 +383,8 @@
                 <h2>Partner with <span class="gold">Excellence</span></h2>
                 <p>Experience premium security services backed by 8+ years of trusted operations</p>
                 <div class="cta-btns">
-                    <a href="contact.html" class="btn-gold">Contact Us Today <i class="fas fa-phone"></i></a>
-                    <a href="services.html" class="btn-outline">View Our Services</a>
+                    <a href="contact.php" class="btn-gold">Contact Us Today <i class="fas fa-phone"></i></a>
+                    <a href="services.php" class="btn-outline">View Our Services</a>
                 </div>
             </div>
         </div>

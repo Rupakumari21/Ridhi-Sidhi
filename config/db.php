@@ -1,8 +1,8 @@
 <?php
 // config/db.php
 
-// Using 127.0.0.1 instead of localhost for better compatibility on macOS
-$host = '127.0.0.1'; 
+ 
+$host = 'localhost'; 
 $dbname = 'ridhi_sidhi_db';
 $username = 'root';
 $password = '';

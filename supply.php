@@ -176,7 +176,7 @@
             <h2>Need Government or Institutional Supplies?</h2>
             <p>Get in touch with us for quotations, tenders, or supply proposals.</p>
             <div class="cta-btns">
-                <a href="contact.html" class="btn-gold">Request Quotation</a>
+                <a href="contact.php" class="btn-gold">Request Quotation</a>
                 <a href="tel:9386831906" class="btn-outline">Call Now</a>
             </div>
         </div>

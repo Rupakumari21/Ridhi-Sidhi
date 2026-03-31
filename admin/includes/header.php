@@ -197,13 +197,15 @@ include '../config/db.php';
             background: var(--gold);
             color: #000;
         }
+
+        
     </style>
 </head>
 <body class="admin-body">
     
     <div class="admin-sidebar">
         <div class="admin-sidebar-logo">
-            <h2>Ridhi Sidhi</h2>
+            <h2>Ridhi Sidhi Security Services
         </div>
         <nav class="admin-nav">
             <a href="dashboard.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'dashboard.php' ? 'active' : ''; ?>">

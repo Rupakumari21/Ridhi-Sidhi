@@ -30,18 +30,85 @@
 
     <div class="contact-content">
         <h3>Our Office Addresses</h3>
+
         <div class="address-list">
+
             <div class="address-item">
                 <span class="address-title">Patna (Head Office)</span>
-                <p>117, Road No - 8, S.K Nagar, Budha Colony, Patna, Bihar – 800001</p>
+                <p>
+                    117, Road No - 8, S.K Nagar,<br>
+                    Budha Colony, Patna, Bihar – 800001
+                </p>
             </div>
+
             <div class="address-item">
                 <span class="address-title">Jharkhand Branch</span>
-                <p>Hanuman Mandir, Khata No - 67, Plot No - 1011, RJ Villa Dawarika Puri, Lower Chutia, Ranchi, Jharkhand – 834001</p>
+                <p>
+                    Hanuman Mandir, Khata No - 67, Plot No - 1011,<br>
+                    RJ Villa Dawarika Puri, Road No - 11,<br>
+                    Lower Chutia, Ranchi, Jharkhand – 834001
+                </p>
             </div>
+
+            <div class="address-item">
+                <span class="address-title">Uttar Pradesh Branch</span>
+                <p>
+                    2/12D, Vijay Khand,<br>
+                    Gomti Nagar, Lucknow,<br>
+                    Uttar Pradesh – 226010
+                </p>
+            </div>
+
         </div>
     </div>
 </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon gold">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Phone Numbers</h3>
+                                <p class="contact-number gold">7004422944,9852572995,9110095987 (General Enquiry)</p>
+                                <p class="contact-number gold">8340635532 (Business & Marketing)</p>
+                                <p class="contact-number gold">9386831906 (Grievance)</p>
+                                <p class="contact-note">24/7 Emergency Support Available</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon gold">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Email Address</h3>
+                                <p class="contact-email">rsssindia2009@gmail.com</p>
+                            
+                                <p class="contact-note">Response within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon gold">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Operating Areas</h3>
+                                <p class="location">Bihar, Jharkhand & Uttar Pradesh</p>
+                                <p class="contact-note">Multi-state GST registration and compliance</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon gold">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                <p class="contact-note">24/7 Emergency Support Available</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -131,11 +198,73 @@
                         </button>
                     </form>
 
-                    <div id="formMessage" class="form-message" style="margin-top: 20px;"></div>
+                    
+<div class="contact-map-box">
+    <h3 class="map-title">
+        <i class="fas fa-map-marker-alt gold"></i>
+        Head Office Location – Patna
+    </h3>
+
+    <div class="map-frame">
+        <iframe
+            src="https://www.google.com/maps?q=117%20Road%20No%208%20S.K%20Nagar%20Budha%20Colony%20Patna%20Bihar%20800001&output=embed"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon gold">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="emergency-text">
+                    <div class="section-subtitle gold">Emergency Support</div>
+                    <h2>24/7 <span class="gold">Emergency Contact</span></h2>
+                    <p class="emergency-description">For urgent security requirements or immediate assistance</p>
+                    <div class="emergency-numbers">
+                        <div class="emergency-number">
+                            <i class="fas fa-phone gold"></i>
+                            <h3>7004422944, 9852572995, 9110095987</h3>
+                        </div>
+                       
+                    </div>
+                    <p class="emergency-note">Available 24 hours, 7 days a week for emergency situations</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Secure Your <span class="gold">Premises Today</span></h2>
+                <p>Get premium security solutions tailored to your specific requirements</p>
+                <div class="cta-btns">
+                    <a href="tel:7004422944" class="btn-gold">Call Now <i class="fas fa-phone"></i></a>
+                    <a href="#contactForm" class="btn-outline">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
 <script>
 $(document).ready(function() {

@@ -8,8 +8,8 @@
                 <h1 class="hero-title">We Provide <span class="gold">Elite Protection</span></h1>
                 <p class="hero-description">Comprehensive security and manpower solutions including Security Guards, Office Maintenance, Stationery, and Government Supplies. Serving prestigious institutions across Bihar, Jharkhand & Uttar Pradesh with over 8 years of proven excellence and 1500+ professionally trained personnel.</p>
                 <div class="hero-btns">
-                    <a href="contact.html" class="btn-gold">Get Started <i class="fas fa-arrow-right"></i></a>
-                    <a href="about.html" class="btn-outline">Learn More</a>
+                    <a href="contact.php" class="btn-gold">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <a href="about.php" class="btn-outline">Learn More</a>
                 </div>
             </div>
             <div class="hero-stats">
@@ -98,7 +98,7 @@
             and reliable services with full compliance.
         </p>
 
-        <a href="contact.html" class="btn-gold">
+        <a href="contact.php" class="btn-gold">
             Request Government Proposal <i class="fas fa-file-contract"></i>
         </a>
     </div>
@@ -174,7 +174,7 @@
             </div>
         </div>
         <div class="view-more-wrapper">
-    <a href="clients.html" class="btn-view-more">
+    <a href="clients.php" class="btn-view-more">
         View More Clients <i class="fas fa-arrow-right"></i>
     </a>
 </div>
@@ -261,7 +261,7 @@
             <h2>Ready for <span class="gold">Government-Grade Security?</span></h2>
             <p>Contact us today for premium security, manpower, and government supply solutions with proven excellence</p>
             <div class="cta-btns">
-                <a href="contact.html" class="btn-gold">Submit Proposal Request <i class="fas fa-file-alt"></i></a>
+                <a href="contact.php" class="btn-gold">Submit Proposal Request <i class="fas fa-file-alt"></i></a>
                 <div class="cta-phone">
                     <a href="tel:9386831906" class="btn-outline">Call Now: 7004422944/ 9852572995 </a>
                 </div>

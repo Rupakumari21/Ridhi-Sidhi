@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// ✅ ONLY redirect USER (not admin)
+if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'user') {
+    header("Location: user/dashboard.php");
+    exit;
+}
+
+?>
+
 <?php include 'includes/header.php'; ?>
 
      <section class="hero">

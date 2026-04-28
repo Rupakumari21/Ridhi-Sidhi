@@ -21,6 +21,23 @@
             $update = $pdo->prepare("UPDATE contact_submissions SET status = 'read' WHERE id = ?");
             $update->execute([$id]);
         }
+
+        if (isset($_POST['send_reply'])) {
+    $reply = $_POST['reply_message'];
+    $id = $_GET['id'];
+
+    // Status update
+    $pdo->prepare("UPDATE contact_submissions SET status='REPLIED' WHERE id=?")
+        ->execute([$id]);
+
+    echo "<script>alert('Reply sent successfully');</script>";
+}
+
+// If Gmail reply clicked → mark as replied
+if (isset($_GET['reply']) && $_GET['reply'] == 1) {
+    $pdo->prepare("UPDATE contact_submissions SET status='replied' WHERE id=?")
+        ->execute([$id]);
+}
         ?>
 
         <div style="margin-bottom: 20px;">
@@ -64,15 +81,11 @@
             </div>
 
             <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);">
-                <form action="delete_enquiry.php" method="POST" onsubmit="return confirm('Are you sure you want to delete this enquiry?');" style="display:inline;">
-                    <input type="hidden" name="id" value="<?php echo $enquiry['id']; ?>">
-                    <button type="submit" style="background: rgba(255,0,0,0.1); border: 1px solid rgba(255,0,0,0.2); color: #ff5555; padding: 10px 20px; border-radius: 6px; cursor: pointer;">
-                        <i class="fas fa-trash"></i> Delete Enquiry
-                    </button>
-                </form>
-                <a href="mailto:<?php echo $enquiry['email']; ?>?subject=Regarding your enquiry at Ridhi Sidhi Security" style="display:inline-block; margin-left:10px; background: rgba(0,255,0,0.1); border: 1px solid rgba(0,255,0,0.2); color: #00ff00; padding: 10px 25px; border-radius: 6px; text-decoration:none;">
-                    <i class="fas fa-reply"></i> Reply via Email
-                </a>
+<a href="enquiry_view.php?id=<?php echo $enquiry['id']; ?>&reply=1" 
+   onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=<?php echo $enquiry['email']; ?>&su=Reply to your enquiry&body=Hello','_blank')"
+   style="background:#0f5132; color:#00ff88; padding:10px 20px; border-radius:6px; text-decoration:none;">
+   📧 Reply via Gmail
+</a>
             </div>
         </div>
 

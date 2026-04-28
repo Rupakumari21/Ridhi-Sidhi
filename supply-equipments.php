@@ -98,7 +98,7 @@
       <h2>Need Equipment Supply?</h2>
       <p>Contact us for bulk supply, tenders & official procurement.</p>
       <div class="cta-btns">
-        <a href="contact.html" class="btn-gold">Request Quotation</a>
+        <a href="contact.php" class="btn-gold">Request Quotation</a>
         <a href="tel:9386831906" class="btn-outline">Call Now</a>
       </div>
     </div>

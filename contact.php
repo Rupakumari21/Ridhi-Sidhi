@@ -198,6 +198,8 @@
                         </button>
                     </form>
 
+                    <div id="formMessage" class="form-message"></div>
+
                     
 <div class="contact-map-box">
     <h3 class="map-title">
@@ -219,7 +221,7 @@
 </div>
 
 
-                    <div id="formMessage" class="form-message"></div>
+                    
                 </div>
             </div>
         </div>

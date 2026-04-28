@@ -81,10 +81,10 @@ include '../config/db.php';
         }
 
         .admin-main {
-            margin-left: var(--admin-sidebar-width);
-            width: calc(100% - var(--admin-sidebar-width));
-            padding: 40px;
-        }
+         margin-left: var(--admin-sidebar-width);
+         width: calc(100% - var(--admin-sidebar-width));
+        padding: 20px 40px 40px 40px; /* top padding kam */
+}
 
         .admin-header {
             display: flex;
@@ -198,8 +198,244 @@ include '../config/db.php';
             color: #000;
         }
 
+        /* 🔥 Sidebar Enhancement */
+.admin-nav a {
+    border-radius: 8px;
+    margin: 5px 10px;
+    position: relative;
+}
+
+/* Hover animation */
+.admin-nav a:hover {
+    transform: translateX(5px);
+}
+
+/* Active glow */
+.admin-nav a.active {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Icon animation */
+.admin-nav a i {
+    transition: 0.3s;
+}
+
+.admin-nav a:hover i {
+    transform: scale(1.2);
+}
+
+/* Sidebar logo glow */
+.admin-sidebar-logo h2 {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* 🔥 Sidebar Enhancement */
+.admin-nav a {
+    border-radius: 8px;
+    margin: 5px 10px;
+    position: relative;
+}
+
+/* Hover animation */
+.admin-nav a:hover {
+    transform: translateX(5px);
+}
+
+/* Active glow */
+.admin-nav a.active {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Icon animation */
+.admin-nav a i {
+    transition: 0.3s;
+}
+
+.admin-nav a:hover i {
+    transform: scale(1.2);
+}
+
+/* Sidebar logo glow */
+.admin-sidebar-logo h2 {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+.admin-header {
+    margin: 0 0 30px 0;
+}
+.admin-main {
+    margin-top: 0;
+    padding-top: 20px;
+}
+.admin-sidebar {
+    top: 0;
+    left: 0;
+}
+
+.admin-header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.admin-main {
+    padding-top: 0 !important;
+}
+
+.admin-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+.admin-form {
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.admin-form input,
+.admin-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+    outline: 1px solid #d4af37;
+}
+
+.admin-form button {
+    background: #d4af37;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+}
+
+.admin-form button:hover {
+    background: #b8962e;
+}
+
+.admin-header {
+    position: fixed;
+    top: 0;
+    left: 260px; /* sidebar width */
+    right: 0;
+    height: 80px;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.admin-main {
+    margin-left: 260px;
+    padding: 100px 40px 40px 40px; /* 👈 TOP padding important */
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #facc15;
+    color: #facc15;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-view:hover {
+    background: #facc15;
+    color: #000;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+    transform: translateY(-2px);
+}
+
+.admin-header {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    right: 0;
+    height: 80px;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px; /* 👈 LEFT + RIGHT spacing */
+
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.admin-header {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+/* 🔥 SAME AS USER DASHBOARD */
+.stat-card {
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255,215,0,0.2);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* ICON */
+.stat-card .stat-icon {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* NUMBER */
+.stat-card h3 {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* TEXT */
+.stat-card p {
+    color: #aaa;
+}
+
+/* 🔥 HOVER EFFECT (same) */
+.stat-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(255,215,0,0.3);
+}
+
+/* 🔥 GLOW ANIMATION (same magic) */
+.stat-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,215,0,0.2), transparent);
+    top: -100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.stat-card:hover::before {
+    top: 100%;
+}
         
-    </style>
+</style>
 </head>
 <body class="admin-body">
     
@@ -217,6 +453,15 @@ include '../config/db.php';
             <a href="users.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'users.php' ? 'active' : ''; ?>">
                 <i class="fas fa-users"></i> Users
             </a>
+            
+             <a href="manage_services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_services.php' ? 'active' : ''; ?>">
+                <i class="fas fa-cogs"></i>Manage Services
+            </a>
+
+            <a href="manage_requests.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_requests.php' ? 'active' : ''; ?>">
+                <i class="fas fa-clipboard-list"></i> Manage Requests
+            </a>
+
             <a href="../index.php">
                 <i class="fas fa-external-link-alt"></i> Visit Site
             </a>

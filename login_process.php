@@ -34,17 +34,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_role'] = $user['role'];
 
             // Redirect based on role
-            $redirect = ($user['role'] === 'admin') ? 'admin/dashboard.php' : 'index.php'; // changed to index.php later
+            // Redirect based on role
+$redirect = ($user['role'] === 'admin') 
+    ? 'admin/dashboard.php' 
+    : 'user/dashboard.php';
 
-            echo json_encode([
-                'status' => 'success', 
-                'message' => 'Login successful!', 
-                'redirect' => $redirect, 
-                'user' => [
-                    'full_name' => $user['full_name'],
-                    'role' => $user['role']
-                ]
-            ]);
+echo json_encode([
+    'status' => 'success', 
+    'message' => 'Login successful!', 
+    'redirect' => $redirect, 
+    'user' => [
+        'full_name' => $user['full_name'],
+        'role' => $user['role']
+    ]
+]);
         } else {
             echo json_encode(['status' => 'error', 'message' => 'Invalid email or password.']);
         }

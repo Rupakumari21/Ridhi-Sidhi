@@ -4,8 +4,8 @@
         // Get counts
         $userCount = $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
         $enquiryCount = $pdo->query("SELECT COUNT(*) FROM contact_submissions")->fetchColumn();
-        $newEnquiryCount = $pdo->query("SELECT COUNT(*) FROM contact_submissions WHERE status = 'new'")->fetchColumn();
-
+        $totalRequests = $pdo->query("SELECT COUNT(*) FROM service_requests")->fetchColumn();
+        $totalServices = $pdo->query("SELECT COUNT(*) FROM services")->fetchColumn();
         // Get latest enquiries
         $latestEnquiries = $pdo->query("SELECT * FROM contact_submissions ORDER BY created_at DESC LIMIT 5")->fetchAll();
         ?>
@@ -18,6 +18,18 @@
                     <p>Total Registered Users</p>
                 </div>
             </div>
+
+            <div class="stat-card">
+    <div class="stat-icon">
+        <i class="fas fa-briefcase"></i>
+    </div>
+    <div class="stat-info">
+        <h3><?php echo $totalServices; ?></h3>
+        <p>Total Available Services</p>
+    </div>
+</div>
+
+
             <div class="stat-card">
                 <div class="stat-icon"><i class="fas fa-envelope"></i></div>
                 <div class="stat-info">
@@ -25,13 +37,19 @@
                     <p>Total Enquiries Received</p>
                 </div>
             </div>
+
+
             <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-bell"></i></div>
-                <div class="stat-info">
-                    <h3><?php echo $newEnquiryCount; ?></h3>
-                    <p>New (Unread) Enquiries</p>
-                </div>
-            </div>
+    <div class="stat-icon">
+        <i class="fas fa-clipboard-list"></i>
+    </div>
+    <div class="stat-info">
+        <h3><?php echo $totalRequests; ?></h3>
+        <p>Total Service Requests</p>
+    </div>
+</div>
+           
+           
         </div>
 
         <div class="admin-table-container">

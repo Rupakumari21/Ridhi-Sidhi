@@ -1797,11 +1797,36 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;.service-card-header .service-icon {
+    font-size: 2rem;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+
+    /* 🔥 GOLD BACKGROUND */
+    background: rgba(255, 215, 0, 0.15);
+
+    /* 🔥 GOLD BORDER */
+    border: 2px solid var(--gold);
+
+    /* 🔥 GLOW EFFECT */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
     background: rgba(255, 215, 0, 0.1);
     border: 2px solid rgba(255, 215, 0, 0.2);
 }
 
+.service-icon i {
+    color: var(--gold);
+}
+
+.detailed-service-card:hover .service-icon {
+    background: rgba(255, 215, 0, 0.25);
+    transform: scale(1.1);
+}
 .service-card-header h4 {
     font-size: 1.3rem;
     color: var(--white);
@@ -6274,3 +6299,206 @@ body.auth-only .nav-login {
     display: none !important;
 }
 
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr; /* mobile me 1 card */
+    }
+}
+
+.service-card-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.service-card-content li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* 🔥 YELLOW TICK */
+.service-card-content li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #facc15; /* yellow */
+    font-weight: bold;
+}
+
+.service-card-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.service-card-content li {
+    position: relative;
+    padding-left: 30px;
+    color: #ccc;
+}
+
+/* 🔥 YELLOW TICK ICON */
+.service-card-content li::before {
+    content: "\f00c"; /* font awesome check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #facc15;
+}
+.service-card-content ul {
+    list-style: none;   /* ❌ bullet remove */
+    padding-left: 0;
+    margin-top: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+}
+
+.service-card-content li {
+    position: relative;
+    padding-left: 28px;
+    color: #ccc;
+}
+
+/* ✅ YELLOW TICK */
+.service-card-content li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #facc15;
+    font-weight: bold;
+}
+
+.service-features {
+    list-style: none;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+}
+
+.service-features {
+    list-style: none;
+    padding-left: 0;   /* 🔥 IMPORTANT FIX */
+    margin: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+}
+
+/* 🔥 YELLOW ICON */
+.service-features li i {
+    color: var(--gold);
+    font-size: 14px;
+}
+
+.service-features {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.service-features li {
+    list-style: none !important;
+}
+.service-features li::before {
+    content: none !important;
+}
+
+li::before {
+    content: none !important;
+}
+
+.service-grid {
+    gap: 25px; /* space between cards */
+}
+
+
+
+.detailed-service-card {
+    padding: 35px 35px;
+}
+
+
+.service-grid {
+    padding: 0 20px;   /* 👈 whole grid spacing */
+}
+
+.detailed-service-card {
+    border-radius: 12px;
+}
+
+.service-grid {
+    max-width: 1100px;   /* 👈 cards ko center me rakhega */
+    margin: 0 auto;      /* 👈 left-right gap automatic */
+    gap: 20px;
+}
+
+.detailed-service-card {
+    max-width: 600px;    /* 👈 card size small */
+    margin: 0 auto;      /* 👈 each card center */
+}
+
+.service-grid {
+    padding: 0 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;          /* 👈 gap kam */
+    padding: 0 5px;    /* 👈 side gap kam */
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+.service-grid {
+    gap: 15px;
+}
+
+.contact-grid {
+    align-items: start;
+}
+.contact-map-box {
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+}
+.map-frame iframe {
+    display: block;
+    height: 250px; /* ya 220px */
+}
+
+.contact-form-container {
+    height: auto !important;
+    align-self: start !important;
+}
+
+.contact-section {
+    padding: 80px 0 40px 0; /* top right bottom left */
+}
+
+.emergency-contact {
+    margin-top: 0 !important;
+    padding-top: 5px; /* adjust kar sakti ho */
+}

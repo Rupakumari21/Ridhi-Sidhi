@@ -109,7 +109,7 @@
       <h2>Need Security Equipment?</h2>
       <p>Contact us for bulk orders, tenders & institutional quotations.</p>
       <div class="cta-btns">
-        <a href="contact.html" class="btn-gold">Request Quotation</a>
+        <a href="contact.php" class="btn-gold">Request Quotation</a>
         <a href="tel:9386831906" class="btn-outline">Call Now</a>
       </div>
     </div>

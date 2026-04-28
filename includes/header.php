@@ -86,11 +86,21 @@ if (session_status() === PHP_SESSION_NONE) {
                             <i class="fas fa-chevron-down dropdown-icon"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <?php if ($_SESSION['user_role'] === 'admin'): ?>
-                                <li><a href="admin/dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                            <?php endif; ?>
-                            <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                        </ul>
+
+    <!-- ADMIN -->
+    <?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+        <li><a href="admin/dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <?php endif; ?>
+
+    <!-- USER -->
+    <?php if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin'): ?>
+        <li><a href="user/dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <?php endif; ?>
+
+    <!-- LOGOUT -->
+    <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+</ul>
                     </li>
                 <?php else: ?>
                     <li class="dropdown nav-login">

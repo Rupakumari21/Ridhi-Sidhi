@@ -117,7 +117,7 @@
         <div class="cta-content">
             <h2>Need Professional Facility Management?</h2>
             <p>Contact us today for reliable and trusted services.</p>
-            <a href="contact.html" class="btn-gold">Request a Quote</a>
+            <a href="contact.php" class="btn-gold">Request a Quote</a>
         </div>
     </div>
 </section>
